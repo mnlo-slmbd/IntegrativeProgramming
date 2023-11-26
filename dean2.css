@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 10vh;
+    background-color: rgb(172, 22, 22);
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.content {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 90vh;
+    background-color: rgb(118, 113, 113); 
+}
+
+.h2-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    position: relative; /* Added to allow absolute positioning of the pseudo-element */
+}
+
+.h2-section::before { /* Added the pseudo-element */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 50px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1px, transparent 1px), 
+                        linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px); /* Light grey background with a border line */
+    border-radius: 10px; /* Rounded corners */
+    z-index: -1; /* Position behind the h2 text */
+}
+
+.picture {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    cursor: pointer;
+}
+
+.h2-centered {
+    text-align: center;
+    width: 100%;
+}

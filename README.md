@@ -1,4 +1,4 @@
-# flutter_app
+# University Career Center Management System
 
 A new Flutter project.
 
